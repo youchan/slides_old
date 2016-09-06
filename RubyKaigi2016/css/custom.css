@@ -1,0 +1,12 @@
+.page p.icon {
+  margin: 0;
+  position: relative;
+  top: -3.6em;
+  left: 25em; 
+}
+
+.page p.icon img {
+  width: 3em;
+}
+
+

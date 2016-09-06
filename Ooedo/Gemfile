@@ -1,0 +1,4 @@
+# A sample Gemfile
+source "https://rubygems.org"
+
+gem "md2key" #, github: 'youchan/md2key', branch: 'for-ooedo5'
