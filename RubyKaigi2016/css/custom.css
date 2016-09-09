@@ -9,4 +9,24 @@
   width: 3em;
 }
 
+.page p.rubykaigi2015 {
+  text-align: center;
+}
 
+.page p.rubykaigi2015 img {
+  width: 60%;
+}
+
+.page ul {
+  list-style-image: url('../images/dot.png');
+}
+
+.background {
+  background-image: url('../images/base.png');
+}
+
+.slide {
+  background-image: url('../images/logo2.png');
+  background-repeat: no-repeat;
+  background-position: right 90%;
+}

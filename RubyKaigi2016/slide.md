@@ -1,4 +1,4 @@
-# Isomorpihic web programming in Ruby
+# Isomorphic web programming in Ruby
 
 %author: Yoh Osaki a.k.a @youchan
 
@@ -17,15 +17,15 @@
 
 ## Retrospection of RubyKaigi2015
 
-%rubykaigi2015: ![](./data/images/rubykaigi2015.png)
+%rubykaigi2015: ![](./data/images/RubyKaigi_2015.png)
 
 ## Opal
 
-* Web frontend programming in Ruby is good!
+* Web front end programming in Ruby is good!
 
 ## Hyalite
 
-* React like virtual DOM implementation in Ruby.
+* React-like virtual DOM implementation in Ruby.
 
 ## Isomorphic programming
 
@@ -35,7 +35,7 @@
 
 ## Menilite
 
-* Share the code for models the client-side and the server-side.
+* Shares the code for models on the client side and the server side.
 * Object marshalling
 * Integration with ActiveRecord
 
@@ -59,21 +59,21 @@ class User < Menilite::Model
 end
 ```
 
-## Validation
+## Validation(TBI)
 
-* Basically all validations needed in the server-side.
-* Considering the responsiveness, client-side validation is preferred.
+* Basically all validations are required on the server-side.
+* Considering responsiveness, client-side validation is preferred.
 * We need both.
 
 ## Object marshalling
 
-* Automatically generating the API as CRUD.
+* Automatically generates the API as CRUD.
 * Proxy as calling the server action from the client-side method call 
 
 ## Controller
 
-* There is the action like the model's action, but differences is usable in request context.
-* Actions which is related to multiple models.
+* There are actions like the model's actions, but difference is usable in request context.
+* Actions that are related to multiple models.
 
 ## Store
 
@@ -86,28 +86,28 @@ end
 
 #### Demo or Die
 
-## Why do I chose the originally object model?
+## Why do I chose the original object model?
 
 * for example, ActiveRecord
-* Reactive Record has interface same as ActiveRecorde can use from client side.
-* Requirements for API in the client side and server side is somewhat deferently.
-* ActiveRecord is too depended on database.
+* Reactive Record has the same interface as ActiveRecord can be used from the client side.
+* Requirements for API in the client side and server side are somewhat deferently.
+* ActiveRecord is too dependant on database.
 
 ## GUID
 
-* Sequential id which database generate automatically is unusable from the client side.
+* It is hard to use sequential IDs that are generated automatically by the database.
 
 ## Access controll
 
-* Not all resources is allowed access from the client.
+* Not all resources are allowed access from the client.
 
 ## Silica
 
-* I going to Silica grow up Silica as totally platform for application.
-* Immediate objective is feature of automatically generating migration for ActiveRecord.
+* I'm going to grow up Silica as universal platform for application.
+* Immediate objective is a result of automatically generating migration for ActiveRecord.
 
 ## Conclusion
 
-* I introduced Menilite is the isomorphic programming framework.
-* I show by live cooding, application is about how easy to build.
+* I introduced Menilite, which is an isomorphic programming framework.
+* I showed by live cooding that the application is concerned about how to build easily.
 

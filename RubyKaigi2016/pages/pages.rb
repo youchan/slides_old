@@ -1,6 +1,6 @@
 class Hyaslide::Page0 < Hyaslide::PageBase
   def header
-    h1(nil, "Isomorpihic web programming in Ruby")
+    h1(nil, "Isomorphic web programming in Ruby")
   end
 
   def content
@@ -43,7 +43,7 @@ class Hyaslide::Page3 < Hyaslide::PageBase
 
   def content
     [].tap do |children|
-      children << p({className:"rubykaigi2015"}, img({className: "", src: "./data/images/rubykaigi2015.png"}))
+      children << p({className:"rubykaigi2015"}, img({className: "", src: "./data/images/RubyKaigi_2015.png"}))
     end
   end
 end
@@ -56,7 +56,7 @@ class Hyaslide::Page4 < Hyaslide::PageBase
   def content
     [].tap do |children|
       children << ul(nil,
-                    li(nil, "Web frontend programming in Ruby is good!")
+                    li(nil, "Web front end programming in Ruby is good!")
       )
     end
   end
@@ -70,7 +70,7 @@ class Hyaslide::Page5 < Hyaslide::PageBase
   def content
     [].tap do |children|
       children << ul(nil,
-                    li(nil, "React like virtual DOM implementation in Ruby.")
+                    li(nil, "React-like virtual DOM implementation in Ruby.")
       )
     end
   end
@@ -100,7 +100,7 @@ class Hyaslide::Page7 < Hyaslide::PageBase
   def content
     [].tap do |children|
       children << ul(nil,
-                    li(nil, "Share the code for models the client-side and the server-side."),
+                    li(nil, "Shares the code for models on the client side and the server side."),
                     li(nil, "Object marshalling"),
                     li(nil, "Integration with ActiveRecord")
       )
@@ -115,21 +115,7 @@ class Hyaslide::Page8 < Hyaslide::PageBase
 
   def content
     [].tap do |children|
-      children << code({ dangerouslySetInnerHTML: { __html: %q{<div class="highlight"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="no">Menilite</span><span class="o">::</span><span class="no">Model</span>
+      children << code({ dangerouslySetInnerHTML: { __html: %q{<span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="no">Menilite</span><span class="o">::</span><span class="no">Model</span>
   <span class="n">field</span> <span class="ss">:name</span>
   <span class="n">field</span> <span class="ss">:password</span>
 
@@ -144,8 +130,6 @@ class Hyaslide::Page8 < Hyaslide::PageBase
     <span class="k">end</span>
   <span class="k">end</span>
 <span class="k">end</span>
-</pre></td></tr></tbody></table>
-</div>
 } } })
     end
   end
@@ -153,14 +137,14 @@ end
 
 class Hyaslide::Page9 < Hyaslide::PageBase
   def header
-    h2(nil, "Validation")
+    h2(nil, "Validation(TBI)")
   end
 
   def content
     [].tap do |children|
       children << ul(nil,
-                    li(nil, "Basically all validations needed in the server-side."),
-                    li(nil, "Considering the responsiveness, client-side validation is preferred."),
+                    li(nil, "Basically all validations are required on the server-side."),
+                    li(nil, "Considering responsiveness, client-side validation is preferred."),
                     li(nil, "We need both.")
       )
     end
@@ -175,7 +159,7 @@ class Hyaslide::Page10 < Hyaslide::PageBase
   def content
     [].tap do |children|
       children << ul(nil,
-                    li(nil, "Automatically generating the API as CRUD."),
+                    li(nil, "Automatically generates the API as CRUD."),
                     li(nil, "Proxy as calling the server action from the client-side method call")
       )
     end
@@ -190,8 +174,8 @@ class Hyaslide::Page11 < Hyaslide::PageBase
   def content
     [].tap do |children|
       children << ul(nil,
-                    li(nil, "There is the action like the model's action, but differences is usable in request context."),
-                    li(nil, "Actions which is related to multiple models.")
+                    li(nil, "There are actions like the model's actions, but difference is usable in request context."),
+                    li(nil, "Actions that are related to multiple models.")
       )
     end
   end
@@ -224,16 +208,16 @@ end
 
 class Hyaslide::Page14 < Hyaslide::PageBase
   def header
-    h2(nil, "Why do I chose the originally object model?")
+    h2(nil, "Why do I chose the original object model?")
   end
 
   def content
     [].tap do |children|
       children << ul(nil,
                     li(nil, "for example, ActiveRecord"),
-                    li(nil, "Reactive Record has interface same as ActiveRecorde can use from client side."),
-                    li(nil, "Requirements for API in the client side and server side is somewhat deferently."),
-                    li(nil, "ActiveRecord is too depended on database.")
+                    li(nil, "Reactive Record has the same interface as ActiveRecord can be used from the client side."),
+                    li(nil, "Requirements for API in the client side and server side are somewhat deferently."),
+                    li(nil, "ActiveRecord is too dependant on database.")
       )
     end
   end
@@ -247,7 +231,7 @@ class Hyaslide::Page15 < Hyaslide::PageBase
   def content
     [].tap do |children|
       children << ul(nil,
-                    li(nil, "Sequential id which database generate automatically is unusable from the client side.")
+                    li(nil, "It is hard to use sequential IDs that are generated automatically by the database.")
       )
     end
   end
@@ -261,7 +245,7 @@ class Hyaslide::Page16 < Hyaslide::PageBase
   def content
     [].tap do |children|
       children << ul(nil,
-                    li(nil, "Not all resources is allowed access from the client.")
+                    li(nil, "Not all resources are allowed access from the client.")
       )
     end
   end
@@ -275,8 +259,8 @@ class Hyaslide::Page17 < Hyaslide::PageBase
   def content
     [].tap do |children|
       children << ul(nil,
-                    li(nil, "I going to Silica grow up Silica as totally platform for application."),
-                    li(nil, "Immediate objective is feature of automatically generating migration for ActiveRecord.")
+                    li(nil, "I'm going to grow up Silica as universal platform for application."),
+                    li(nil, "Immediate objective is a result of automatically generating migration for ActiveRecord.")
       )
     end
   end
@@ -290,12 +274,12 @@ class Hyaslide::Page18 < Hyaslide::PageBase
   def content
     [].tap do |children|
       children << ul(nil,
-                    li(nil, "I introduced Menilite is the isomorphic programming framework."),
-                    li(nil, "I show by live cooding, application is about how easy to build.")
+                    li(nil, "I introduced Menilite, which is an isomorphic programming framework."),
+                    li(nil, "I showed by live cooding that the application is concerned about how to build easily.")
       )
     end
   end
 end
 
 Hyaslide.page_count = 19
-Hyaslide.title = "Isomorpihic web programming in Ruby"
+Hyaslide.title = "Isomorphic web programming in Ruby"
