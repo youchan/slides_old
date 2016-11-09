@@ -2,7 +2,7 @@
 
 %author: Yoh Osaki a.k.a @youchan
 
-%icon: ![](./data/images/youchan.jpg)
+%icon: ![](youchan.jpg)
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## Retrospection of RubyKaigi2015
 
-%rubykaigi2015: ![](./data/images/RubyKaigi_2015.png)
+%rubykaigi2015: ![](RubyKaigi_2015.png)
 
 ## Opal
 

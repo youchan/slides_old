@@ -6,7 +6,7 @@ end
 def content
   [].tap do |children|
       children << p({className:"author"}, "Yoh Osaki a.k.a @youchan")
-      children << p({className:"icon"}, img({className: "", src: "assets/RubyKaigi2016/images/./data/images/youchan.jpg"}))
+      children << p({className:"icon"}, img({className: "", src: "assets/RubyKaigi2016/images/youchan.jpg"}))
   end
 end
 end
@@ -43,7 +43,7 @@ end
 
 def content
   [].tap do |children|
-      children << p({className:"rubykaigi2015"}, img({className: "", src: "assets/RubyKaigi2016/images/./data/images/RubyKaigi_2015.png"}))
+      children << p({className:"rubykaigi2015"}, img({className: "", src: "assets/RubyKaigi2016/images/RubyKaigi_2015.png"}))
   end
 end
 end

@@ -2,11 +2,11 @@
 
 %author: 株式会社ユビレジ 大崎 瑶(よう)
 
-%icon: ![](./data/images/youchan.jpg)
+%icon: ![](youchan.jpg)
 
 ---
 
-%ubiregi: ![](./data/images/ubiregi.png)
+%ubiregi: ![](ubiregi.png)
 
 ## コーヒー屋
 
@@ -20,7 +20,7 @@
 
 ---
 
-%ubiregi-user: ![](./data/images/20thousand.png)
+%ubiregi-user: ![](20thousand.png)
 
 ---
 
@@ -44,7 +44,7 @@
 
 ---
 
-%mpop: ![](./data/images/mpop.png)
+%mpop: ![](mpop.png)
 
 ## コーヒー屋さんにもマッチするユビレジ
 
@@ -64,7 +64,7 @@
 
 ---
 
-%flickorder: ![](./data/images/flickorder.png)
+%flickorder: ![](flickorder.png)
 
 ## コーヒー屋さんにもマッチするユビレジ
 
@@ -76,11 +76,11 @@
 
 ---
 
-%rpoint: ![](./data/images/rpoint.jpg)
+%rpoint: ![](rpoint.jpg)
 
 ---
 
-%rpoint: ![](./data/images/rpoint.jpg)
+%rpoint: ![](rpoint.jpg)
 
 <div class="ogijun"><p>ogijun氏も開発に参加！！！</p></div>
 
@@ -100,7 +100,7 @@
 
 #### マージ即デプロイ
 
-%coffee: ![](./data/images/coffee.jpg)
+%coffee: ![](coffee.jpg)
 
 ## プロセス
 
@@ -108,17 +108,17 @@
     - 2週間のスプリント
     - アジャイルレトロスペクティブ
 
-%taskboard: ![](./data/images/taskboard.jpg)
+%taskboard: ![](taskboard.jpg)
 
-%ajile: ![](./data/images/ajile.jpg)
+%ajile: ![](ajile.jpg)
 
 ## ロールプレイ
 
-%rollplay: ![](./data/images/rollplay.jpg)
+%rollplay: ![](rollplay.jpg)
 
 ## カモ鍋
 
-%kamo: ![](./data/images/kamo.jpg)
+%kamo: ![](kamo.jpg)
 
 ----
 
