@@ -5,6 +5,12 @@ require_relative 'server'
 
 dir = 'data'
 
+options = {}
+
+if ENV['RACK_ENV'] == 'production'
+  options[:daemonize] = true
+end
+
 slide_loader = Hyaslide::SlideLoader.new
 Dir.foreach(dir) do |dir_name|
   if !dir_name.start_with?('.') && File.directory?("#{dir}/#{dir_name}")
@@ -34,4 +40,4 @@ Rack::Server.start({
   Host:   '0.0.0.0',
   Port:   8080,
   signals: false,
-})
+}.merge(options))
