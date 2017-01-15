@@ -7,7 +7,7 @@ require 'track_field'
 module Hyaslide
   SLIDE_WIDTH = 960
   SLIDE_HEIGHT = 720
-  TOTAL_TIME = 35 * 60
+  TOTAL_TIME = 15 * 60
 
   def self.page_count
     @page_count

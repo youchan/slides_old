@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100');
+@import url('https://fonts.googleapis.com/earlyaccess/mplus1p.css?family=Mplus+1p');
+
+.hyaslide {
+  font-family: 'Josefin Sans', "Mplus 1p", sans-serif;
+  font-weight: 200;
+}
+
+.hyaslide h1 {
+  font-weight: 200;
+}
+
+.hyaslide h2 {
+  font-weight: 200;
+}
+
+.hyaslide h3 {
+  font-weight: 200;
+}
+
+.hyaslide .background {
+  background-color: #14B4C8;
+  color: #FFFFFF;
+}
+
+.page p.icon {
+  margin: 0;
+  position: relative;
+  top: -3.6em;
+  left: 25em; 
+}
+
+.page p.icon img {
+  margin-top: 1em;
+  width: 3em;
+  border-radius: 24px;
+}
+
