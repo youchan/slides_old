@@ -1,0 +1,162 @@
+.hyaslide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hyaslide .background {
+  background-color: #004;
+  color: #FFF;
+}
+
+li {
+  list-style: url(../images/dot.png);
+}
+
+strong {
+  color: red;
+}
+
+.company {
+  margin-left: 3em;
+}
+
+.page p.icon {
+  margin: 0;
+  position: relative;
+  top: -3.6em;
+  left: 25em; 
+}
+
+.page p.icon img {
+  width: 3em;
+}
+
+.page .ubiregi {
+  text-align: center;
+}
+
+.page .ubiregi img {
+  width: 100%;
+}
+
+.page .ubiregi-user {
+  text-align: center;
+}
+
+.page .ubiregi-user img {
+  width: 100%;
+}
+
+.page .cathedral {
+  text-align: center;
+}
+
+.page .cathedral img {
+  width: 30%;
+}
+
+.page .bazaar {
+  text-align: center;
+}
+
+.page .bazaar img {
+  width: 80%;
+}
+
+.page .mf {
+}
+
+.page .mf img {
+  width: 6em;
+  position: absolute;
+  top: 4em;
+  left: 22em;
+  background: #FFF;
+  padding: 0.3em;
+}
+
+.page .coockpad {
+}
+
+.page .coockpad img {
+  width: 6em;
+  position: absolute;
+  top: 6em;
+  left: 22em;
+  background: #FFF;
+  padding: 0.3em;
+}
+
+.page .speee {
+}
+
+.page .speee img {
+  width: 2em;
+  position: absolute;
+  top: 7em;
+  left: 18em;
+  background: #FFF;
+  padding: 0.3em;
+}
+
+.page .ubiregi_logo {
+  text-align: center;
+}
+
+.page .ubiregi_logo img {
+  width: 40%;
+  background: #FFF;
+  padding: 0.3em;
+}
+
+.page .ammatsuda {
+}
+
+.page .amatsuda img {
+  width: 6em;
+  position: absolute;
+  top: 2em;
+  left: 22em;
+}
+
+.page .ammatsuda {
+}
+
+.page .amatsuda img {
+  width: 6em;
+  position: absolute;
+  top: 2em;
+  left: 22em;
+}
+
+.page .watson {
+  text-align: center;
+}
+
+.page .watson img {
+  width: 60%;
+}
+
+.page .watson2 {
+  text-align: center;
+}
+
+.page .watson2 img {
+  width: 80%;
+}
+
+.page .feedback {
+  text-align: center;
+}
+
+.page .feedback img {
+  width: 60%;
+  background: #FFF;
+  padding: 1em;
+}
+
+a:visited {
+  color: #004;
+}
