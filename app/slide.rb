@@ -1,13 +1,13 @@
 require 'hyalite'
 require 'opal-router'
+require 'browser'
 require 'browser/interval'
 require 'browser/location'
 require 'track_field'
 
-module Hyaslide
+module Gibier
   SLIDE_WIDTH = 960
   SLIDE_HEIGHT = 720
-  TOTAL_TIME = 15 * 60
 
   def self.page_count
     @page_count
@@ -33,6 +33,22 @@ module Hyaslide
     @slide_name = name
   end
 
+  def self.gh_pages
+    `window.ghPages`
+  end
+
+  def self.gh_pages=(page)
+    `window.ghPages=page`
+  end
+
+  def self.assets_path
+    `window.assetsPath`
+  end
+
+  def self.assets_path=(path)
+    @assets_path = path
+  end
+
   class Slide
     include Hyalite::Component
     include Hyalite::Component::ShortHand
@@ -40,12 +56,12 @@ module Hyaslide
     def pages(height)
       case @state[:mode]
       when :slide
-        Hyaslide.page_count.times.map do |i|
-          Object.const_get("Hyaslide::Page#{i}").el({visible: @state[:page_number] == i, page_number: i, slide_height: height})
+        Gibier.page_count.times.map do |i|
+          Object.const_get("Gibier::Page#{i}").el({visible: @state[:page_number] == i, page_number: i, slide_height: height})
         end
       when :print
-        Hyaslide.page_count.times.map do |i|
-          Object.const_get("Hyaslide::Page#{i}").el({visible: true, page_number: i, slide_height: height})
+        Gibier.page_count.times.map do |i|
+          Object.const_get("Gibier::Page#{i}").el({visible: true, page_number: i, slide_height: height})
         end
       end
     end
@@ -63,14 +79,16 @@ module Hyaslide
 
     def component_did_mount
       $window.on(:keydown) do |evt|
-        handle_key_down(evt.code)
+        handle_key_down(evt)
       end
 
-      @props[:ws].on(:message) do |msg|
-        (event, value) = msg.data.split(':')
-        case event
-        when 'keydown'
-          handle_key_down(value.to_i)
+      unless Gibier.gh_pages
+        @props[:ws].on(:message) do |msg|
+          (event, value) = msg.data.split(':')
+          case event
+          when 'keydown'
+            handle_key_down(value.to_i)
+          end
         end
       end
 
@@ -80,16 +98,17 @@ module Hyaslide
     end
 
     def page_to(num)
-      $window.location.assign("/#{Hyaslide.slide_name}##{num}")
+      $window.location.assign("#{$window.location.to_s.sub(/#\d+$/, '')}##{num}")
     end
 
-    def handle_key_down(keycode)
+    def handle_key_down(event)
+      keycode = event.code
       case keycode
-      when 39
-        page_to(@state[:page_number] + 1) if @state[:page_number] < Hyaslide.page_count
-      when 37
+      when 39,34
+        page_to(@state[:page_number] + 1) if @state[:page_number] < Gibier.page_count
+      when 37,33
         page_to(@state[:page_number] - 1) if @state[:page_number] > 0
-      when 83
+      when 83,66
         unless @state[:start]
           set_state(start: Time.now)
         else
@@ -103,9 +122,39 @@ module Hyaslide
         end
       when 70
         set_state(footer_visible: !@state[:footer_visible])
+        if `event.native.ctrlKey`
+          fullscreen
+        end
+      when 116
+        if `event.native.shiftKey`
+          fullscreen
+        end
       else
         puts "keycode = #{keycode}"
       end
+    end
+
+    def fullscreen
+      %x(
+        var element = document.getElementsByClassName('gibier')[0];
+        var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
+
+        if (requestMethod) {
+            requestMethod.call(element);
+        }
+      )
+    end
+
+    def duration
+      text = "10"
+      %x(
+        var el = document.getElementsByClassName('duration')[0];
+        if (el) {
+          text = el.innerText;
+        }
+      )
+
+      text.to_i * 60
     end
 
     def render
@@ -127,13 +176,13 @@ module Hyaslide
           div({
             className: 'slide',
             style: {zoom: zoom, top: "#{top}px", left: "#{left}px"},
-            onKeyDown: -> (evt) { handle_key_down(evt.code) }
+            onKeyDown: -> (event) { handle_key_down(event) }
           },
             pages(SLIDE_HEIGHT * zoom)
           ),
-          Hyaslide::TrackField.el({total_time: TOTAL_TIME, start: @state[:start], page_number: @state[:page_number], page_count: Hyaslide.page_count}),
+          Gibier::TrackField.el({total_time: duration, start: @state[:start], page_number: @state[:page_number], page_count: Gibier.page_count}),
           section({className: 'footer'}.merge(footer_style),
-            p({className: 'title'}, Hyaslide.title),
+            p({className: 'title'}, Gibier.title),
             p({className: 'powered-by'}, "Powered by ", span({className: "hyalite"}, "Hyalite"))
           )
         )

@@ -1,0 +1,77 @@
+.page p.icon {
+  margin: 0;
+  position: relative;
+  top: -3.6em;
+  left: 25em; 
+}
+
+.page p.icon img {
+  width: 3em;
+}
+
+.page p.rubykaigi2015 {
+  text-align: center;
+}
+
+.page p.rubykaigi2015 img {
+  width: 60%;
+}
+
+.page ul {
+  list-style-image: url('../images/dot.png');
+}
+
+.background {
+  background-image: url('../images/background.png');
+}
+
+.huge {
+  font-size: 10vw;
+  text-align: center;
+}
+
+.page .full {
+  text-align: center;
+}
+
+.page p.full img {
+  width: 100%;
+}
+
+.page .book {
+  text-align: center;
+}
+
+.page p.book img {
+  width: 40%;
+}
+
+.page p.tada {
+  position: relative;
+  top: -11em;
+  left: 24em;
+}
+
+.page p.tada img {
+  width: 4em;
+}
+
+.page p.new {
+  position: relative;
+  top: -2.8em;
+  left: 19.5em;
+}
+
+.page p.new img {
+  width: 2em;
+}
+
+.page p.new2 {
+  position: relative;
+  top: -5.8em;
+  left: 27em;
+}
+
+.page p.new2 img {
+  width: 3em;
+}

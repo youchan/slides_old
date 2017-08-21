@@ -5,17 +5,9 @@ require_relative 'server'
 
 dir = 'data'
 
-options = {}
-
-if ENV['RACK_ENV'] == 'production'
-  options[:daemonize] = true
-end
-
-slide_loader = Hyaslide::SlideLoader.new
-Dir.foreach(dir) do |dir_name|
-  if !dir_name.start_with?('.') && File.directory?("#{dir}/#{dir_name}")
-    slide_loader.add_slide(dir_name)
-  end
+slide_loader = Gibier::SlideLoader.new
+Gibier::SlideHelper.each_slides(dir) do |name|
+  slide_loader.add_slide(name)
 end
 
 app = Rack::Builder.app do
@@ -40,4 +32,4 @@ Rack::Server.start({
   Host:   '0.0.0.0',
   Port:   8080,
   signals: false,
-}.merge(options))
+})
