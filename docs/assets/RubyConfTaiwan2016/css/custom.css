@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+.gibier {
+  font-family: Questrial,sans-serif;
+}
+
+.gibier h1 {
+  font-family: Poiret One,sans-serif;
+}
+
+.gibier h2 {
+  font-family: Poiret One,sans-serif;
+}
+
+.gibier .background {
+  background-color: #5F4F47;
+  color: #FFFFFF;
+}
+
+.page ul {
+  list-style-image: url('../images/gem_icon.png');
+}
+
+.page p.icon {
+  margin: 0;
+  position: relative;
+  top: -3.6em;
+  left: 25em; 
+}
+
+.page p.icon img {
+  margin-top: 1em;
+  width: 3em;
+}
+

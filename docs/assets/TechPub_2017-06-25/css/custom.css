@@ -1,0 +1,71 @@
+.gibier {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.gibier .background {
+  background-color: #004;
+  color: #FFF;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+li {
+  list-style: url(../images/dot.png);
+}
+
+strong {
+  color: red;
+}
+
+.company {
+  margin-left: 3em;
+}
+
+.page p.icon {
+  margin: 0;
+  position: relative;
+  top: -3.6em;
+  left: 25em; 
+}
+
+.page p.icon img {
+  width: 3em;
+}
+
+.page .book {
+}
+
+.page .book img {
+  float: right;
+  width: 8em;
+  margin: 8px;
+}
+
+.page .right {
+  text-align: right;
+}
+
+.page .small {
+  font-size: 0.6em;
+}
+
+.page_10 * {
+  font-size: 98%;
+}
+
+a:active {
+  color: #ff4;
+}
+
+a:link {
+  color: #ff4;
+}
+
+a:visited {
+  color: #ff4;
+}
