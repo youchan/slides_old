@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100');
 @import url('https://fonts.googleapis.com/earlyaccess/mplus1p.css?family=Mplus+1p');
 
-.hyaslide {
+.gibier {
   font-family: 'Josefin Sans', "Mplus 1p", sans-serif;
   font-weight: 200;
 }
 
-.hyaslide h1 {
+.gibier h1 {
   font-weight: 200;
 }
 
-.hyaslide h2 {
+.gibier h2 {
   font-weight: 200;
 }
 
-.hyaslide h3 {
+.gibier h3 {
   font-weight: 200;
 }
 
-.hyaslide .background {
+.gibier .background {
   background-color: #14B4C8;
   color: #FFFFFF;
 }

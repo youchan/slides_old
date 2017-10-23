@@ -1,4 +1,4 @@
-.hyaslide {
+.gibier {
   background-image: url(../images/beans.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -6,7 +6,7 @@
   background-size: cover;
 }
 
-.hyaslide .background {
+.gibier .background {
   background-color: rgba(255,255,255,0.9);
   color: #000;
 }
@@ -38,11 +38,11 @@ strong {
   width: 100%;
 }
 
-.page .ubiregi-user {
+.page .users {
   text-align: center;
 }
 
-.page .ubiregi-user img {
+.page .users img {
   width: 100%;
 }
 

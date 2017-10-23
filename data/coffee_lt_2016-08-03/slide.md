@@ -20,7 +20,7 @@
 
 ---
 
-%ubiregi-user: ![](20thousand.png)
+%users: ![](20thousand.png)
 
 ---
 

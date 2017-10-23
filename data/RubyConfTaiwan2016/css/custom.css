@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
-.hyaslide {
+.gibier {
   font-family: Questrial,sans-serif;
 }
 
-.hyaslide h1 {
+.gibier h1 {
   font-family: Poiret One,sans-serif;
 }
 
-.hyaslide h2 {
+.gibier h2 {
   font-family: Poiret One,sans-serif;
 }
 
-.hyaslide .background {
+.gibier .background {
   background-color: #5F4F47;
   color: #FFFFFF;
 }

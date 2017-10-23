@@ -1,11 +1,11 @@
-.hyaslide {
+.gibier {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
-.hyaslide .background {
+.gibier .background {
   background-color: #004;
   color: #FFF;
 }
