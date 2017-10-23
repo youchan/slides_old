@@ -1,0 +1,70 @@
+.slide .page {
+  top: 45%;
+}
+
+.page p.icon {
+  margin: 0;
+  position: relative;
+  top: -3.6em;
+  left: 25em; 
+}
+
+.page p.icon img {
+  width: 3em;
+}
+
+.huge {
+  font-size: 10vw;
+  text-align: center;
+  margin: 0.2em 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.opal {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0.2em 0;
+}
+
+.large {
+  font-size: 5vw;
+  text-align: center;
+}
+
+.page p.rubykaigi2015 {
+  text-align: center;
+}
+
+.page p.rubykaigi2015 img {
+  width: 60%;
+}
+
+.page ul {
+  list-style-image: url('../images/dot.png');
+}
+
+.background-filter {
+  background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.95), 80%, rgba(255,255,255,0.2));
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  background-image: url('../images/base.jpg');
+}
+
+.slide {
+  color: #555;
+}
+
+a:visited {
+  color: #003;
+}
+
+a:link {
+  color: #003;
+}
