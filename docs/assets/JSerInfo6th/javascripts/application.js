@@ -26563,7 +26563,7 @@ if (params == null) params = nil;
         var $a, self = this, keycode = nil, $case = nil;
 
         keycode = event.$code();
-        return (function() {$case = keycode;if ("Space"['$===']($case) || "ArrowRight"['$===']($case) || "ArrowUp"['$===']($case)) {return self.$page_forward()}else if ("Backspace"['$===']($case) || "ArrowLeft"['$===']($case) || "ArrowDown"['$===']($case)) {return self.$page_back()}else if ("KeyS"['$===']($case) || "KeyB"['$===']($case)) {if ((($a = self.state['$[]']("start")) !== nil && $a != null && (!$a.$$is_boolean || $a == true))) {
+        return (function() {$case = keycode;if ("Space"['$===']($case) || "ArrowRight"['$===']($case) || "ArrowUp"['$===']($case) || "PageDown"['$===']($case)) {return self.$page_forward()}else if ("Backspace"['$===']($case) || "ArrowLeft"['$===']($case) || "ArrowDown"['$===']($case) || "PageUp"['$===']($case)) {return self.$page_back()}else if ("KeyS"['$===']($case) || "KeyB"['$===']($case)) {if ((($a = self.state['$[]']("start")) !== nil && $a != null && (!$a.$$is_boolean || $a == true))) {
           return self.$set_state($hash2(["start"], {"start": nil}))
           } else {
           return self.$set_state($hash2(["start"], {"start": $scope.get('Time').$now()}))
