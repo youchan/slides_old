@@ -109,9 +109,9 @@ module Gibier
     def handle_key_down(event)
       keycode = event.code
       case keycode
-      when :Space, :ArrowRight, :ArrowUp
+      when :Space, :ArrowRight, :ArrowUp, :PageDown
         page_forward
-      when :Backspace, :ArrowLeft, :ArrowDown
+      when :Backspace, :ArrowLeft, :ArrowDown, :PageUp
         page_back
       when :KeyS, :KeyB
         unless @state[:start]
