@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+
+.slide .page {
+  color: #eff55d;
+  font-family: "Sawarabi Mincho";
+}
+
+.page_0 h1 {
+  display: none;
+}
+
+.page p.icon {
+  margin: 0;
+  position: relative;
+  top: -3.6em;
+  left: 25em; 
+}
+
+.page p.icon img {
+  width: 3em;
+}
+
+.page p.cover {
+  text-align: center;
+  margin: 0;
+}
+
+.page p.cover img {
+  width: 60%;
+}
+
+.page p.kube {
+  text-align: center;
+  margin: 0;
+}
+
+.page p.kube img {
+  width: 40%;
+}
+
+.page p.services {
+  text-align: center;
+  margin: 0;
+}
+
+.page p.services img {
+  width: 65%;
+}
+
+.huge {
+  font-size: 10vw;
+  text-align: center;
+  margin: 0.2em 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.opal {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0.2em 0;
+}
+
+.large {
+  font-size: 5vw;
+  text-align: center;
+}
+
+.page p.rubykaigi2015 {
+  text-align: center;
+}
+
+.page p.rubykaigi2015 img {
+  width: 60%;
+}
+
+.page ul {
+  list-style-image: url('../images/dot.png');
+}
+
+.background {
+  background-color: #464241;
+  background-size: cover; 
+}
+
+.slide {
+  color: #ddd;
+}
+
+a:visited {
+  color: #ddd;
+}
+
+a:link {
+  color: #ddd;
+}

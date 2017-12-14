@@ -1,12 +1,12 @@
 GIT
-  remote: https://github.com/adambeynon/opal-router.git
+  remote: git://github.com/adambeynon/opal-router.git
   revision: bc8c242510794ecbb842b52423732f2ec55c2a1e
   specs:
     opal-router (0.0.1)
       opal (>= 0.3.44)
 
 GIT
-  remote: https://github.com/opal/opal-haml.git
+  remote: git://github.com/opal/opal-haml.git
   revision: bf174e036997b2f9bc10402da78e110aba404bed
   specs:
     opal-haml (0.4.4)
@@ -15,7 +15,7 @@ GIT
       opal-sprockets (~> 0.4.1)
 
 GIT
-  remote: https://github.com/youchan/opal-websocket.git
+  remote: git://github.com/youchan/opal-websocket.git
   revision: 42ade51be80c9da6558f1337c4457eb41bd6b808
   specs:
     opal-websocket (0.1.0)
@@ -120,4 +120,4 @@ DEPENDENCIES
   opal-websocket!
 
 BUNDLED WITH
-   1.16.0.pre.3
+   1.16.0
