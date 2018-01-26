@@ -8,6 +8,14 @@
     %link{rel:"stylesheet", href:"assets/#{@slide_name}/css/custom.css"}
     %link{rel:"stylesheet", href:"assets/css/highlight.css"}
 
+    %script{async: true, src: "https://www.googletagmanager.com/gtag/js?id=UA-72552300-3"}
+    :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-72552300-3');
+
   %body
     %section.gibier
 
