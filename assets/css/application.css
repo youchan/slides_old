@@ -129,6 +129,15 @@ body {
   width: 80%;
 }
 
+.page p.portlait {
+  text-align: center;
+  margin: 0;
+}
+
+.page p.portlait img {
+  width: 40%;
+}
+
 h1 {
   font-size: 1.6em;
   text-align: center;

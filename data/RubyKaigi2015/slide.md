@@ -1,7 +1,7 @@
 # Writing web application in Ruby
 %author: Yoh Osaki a.k.a @youchan
 
-%icon: ![](youchan.jpg)
+![icon](youchan.jpg)
 
 ## Prologue
 
@@ -17,7 +17,7 @@ You were developing web application with Ruby on Rails, but somehow you ended up
 ----
 #### I love ruby, so I want to write front-end in Ruby too.
 
-%ruby: ![](ruby.png)
+![ruby](ruby.png)
 
 ## Who am I?
 * Yoh Osaki (@youchan)
@@ -30,7 +30,7 @@ You were developing web application with Ruby on Rails, but somehow you ended up
 
 ### Ubiregi
 
-%ubiregi-logo: ![](ubiregi-logo.png)
+![ubiregi-logo](ubiregi-logo.png)
 
 * Junkudo had using Ubiregi
 * iPad POS
@@ -38,7 +38,7 @@ You were developing web application with Ruby on Rails, but somehow you ended up
 * Ruby on Rails
 * Dashboard: Web app
 
-%ubiregi-ipad: ![](ubiregi-ipad.png)
+![ubiregi-ipad](ubiregi-ipad.png)
 
 ### Dashboard
 * Web front-end
@@ -47,7 +47,7 @@ You were developing web application with Ruby on Rails, but somehow you ended up
 
 %space:
 
-%dashboard: ![](dashboard.png)
+![dashboard](dashboard.png)
 
 ### React.js
 * View framework using Virtual DOM
@@ -79,7 +79,7 @@ You were developing web application with Ruby on Rails, but somehow you ended up
 
 ## Opal
 
-%opal: ![](opal.png)
+![opal](opal.png)
 
 ----
 #### After using it for a while, my impression is "It works".
